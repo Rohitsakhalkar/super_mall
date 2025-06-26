@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Shops</title>
+    <link rel="stylesheet" href="styles/manage-shops.css">
+</head>
+<body>
+    <h1>Manage Shops</h1>
+
+    <!-- Admin Options Buttons -->
+    <div id="adminOptions">
+        <button id="viewShopsBtn">View Available Shops</button>
+    </div>
+
+    <!-- Shops Container for Displaying Shop List -->
+    <div id="shopsContainer" class="hidden">
+        <h2>Available Shops</h2>
+        <div id="shopList"></div>
+    </div>
+
+    <!-- Form for Modifying or Removing Shops -->
+    <div id="editFormContainer" class="hidden">
+        <h2 id="formTitle">Modify Shop</h2>
+        <form id="editShopForm">
+            <input type="text" id="shopId" placeholder="Shop ID" required>
+            <input type="text" id="shopName" placeholder="Shop Name">
+            <input type="text" id="shopOwner" placeholder="Owner Name">
+            <input type="text" id="shopCategory" placeholder="Category">
+            <input type="number" id="shopFloor" placeholder="Floor Number">
+            <button type="submit" id="confirmActionBtn">Confirm</button>
+            <button type="button" id="cancelActionBtn">Cancel</button>
+        </form>
+    </div>
+
+    <!-- Import JavaScript File -->
+    <script type="module" src="scripts/manage-shops.js"></script>
+</body>
+</html>

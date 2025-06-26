@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light Blue Background */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #007bff; /* Blue Header */
+    color: white;
+    padding: 0.8rem 1.5rem; /* Reduced Padding */
+    text-align: center;
+    font-size: 1.8rem; /* Reduced font size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  /* Offers Container */
+  .offers-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* List of Offers */
+  .offers-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  /* Individual Offer Card */
+  .offer-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .offer-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .offer-item h3 {
+    font-size: 1.3rem;
+    color: #007bff; /* Blue Shop Name */
+    margin-bottom: 1rem;
+  }
+  
+  .offer-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    text-align: center;
+    padding: 1rem; /* Reduced padding */
+    background-color: #007bff; /* Blue Footer */
+    color: white;
+    font-size: 0.9rem; /* Slightly smaller font */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Buttons */
+  .btn {
+    background-color: #007bff; /* Blue Buttons */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Darker Blue on Hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      font-size: 1.6rem; /* Adjust font size for smaller screens */
+    }
+  
+    .offers-container {
+      padding: 1.8rem; /* Reduced padding */
+    }
+  
+    .offer-item {
+      padding: 1.2rem; /* Adjust padding in offers */
+    }
+  
+    .offers-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .offers-list {
+      grid-template-columns: 1fr; /* Stack the offers in a single column */
+    }
+  
+    .footer {
+      font-size: 0.8rem; /* Smaller font for footer */
+    }
+  }
+  

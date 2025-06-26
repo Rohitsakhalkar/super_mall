@@ -1,0 +1,41 @@
+<!-- manage-offers.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/offers.css">
+    <title>Manage Offers</title>
+</head>
+<body>
+
+    <h1>Manage Offers</h1>
+    <button id="viewOffersBtn">View Offers</button>
+    <button id="addOfferBtn">Add Offer</button>
+
+    <div id="offersContainer" class="hidden">
+        <h2>Available Offers</h2>
+        <div id="offerList"></div>
+    </div>
+
+    <div id="offerFormContainer" class="hidden">
+        <h2 id="formTitle">Add Offer</h2>
+        <form id="offerForm">
+            <input type="hidden" id="offerId">
+            <label for="shopName">Shop Name:</label>
+            <input type="text" id="shopName" required>
+
+            <label for="offerEndDate">Offer End Date:</label>
+            <input type="date" id="offerEndDate" required>
+
+            <label for="offerDetails">Offer Details:</label>
+            <textarea id="offerDetails" required></textarea>
+
+            <button type="submit" id="confirmActionBtn">Add Offer</button>
+            <button type="button" id="cancelActionBtn">Cancel</button>
+        </form>
+    </div>
+
+    <script type="module" src="scripts/offers.js"></script>
+</body>
+</html>

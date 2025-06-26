@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login - Super Mall</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" href="assets/icons/logo.png">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Super Mall Admin Login</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="view-offers.html">View Offers</a>
+    </nav>
+  </header>
+
+  <!-- Login Section -->
+  <section class="login-section">
+    <div class="login-container">
+      <h2>Admin Login</h2>
+      <form id="frm">
+        <div class="form-group">
+          <label for="ad_username">username</label>
+          <input type="text" id="ad_username" placeholder="Enter your username" required>
+        </div>
+        <div class="form-group">
+          <label for="ad_password">Password</label>
+          <input type="password" id="ad_password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <p id="error-message" class="error-message"></p>
+    </div>
+  </section>
+
+   <script type="module" src="scripts/auth.js"></script>
+
+</body>
+</html>

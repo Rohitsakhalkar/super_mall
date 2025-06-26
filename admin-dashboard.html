@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Super Mall</title>
+  <link rel="stylesheet" href="styles/admin.css">
+  <link rel="icon" href="assets/icons/logo.png">
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <h2>Admin Dashboard</h2>
+    <nav>
+      <ul>
+        <li><a href="shop.html">Create Shop</a></li>
+        <li><a href="manage_shops.html">Manage Shops</a></li>
+        <li><a href="offers.html">Manage Offers</a></li>
+        <li><a href="login.html" class="logout-btn">Logout</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="dashboard-content">
+    <header>
+      <h1>Welcome, Admin!</h1>
+    </header>
+
+    <section class="overview">
+      <h2>Dashboard Overview</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Total Shops</h3>
+          <p id="total-shops"></p>
+        </div>
+        <div class="card">
+          <h3>Total Offers</h3>
+          <p id="total-offers"></p>
+        </div>
+        <div class="card">
+          <h3>Total Floors</h3>
+          <p id="total-floors"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-actions">
+      <h2>Quick Actions</h2>
+      <div class="action-buttons">
+        <a href="shop.html" class="btn">Create New Shop</a>
+        <a href="offers.html" class="btn">Manage Offers</a>
+       
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Super Mall. All Rights Reserved.</p>
+  </footer>
+  <script type="module" src="scripts/dashboard.js"></script>
+</body>
+</html>

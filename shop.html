@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Shop</title>
+  <link rel="stylesheet" href="styles/shop.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Add Shop Details</h2>
+    <form id="shopForm">
+      <div class="form-group">
+        <label for="shopName">Shop Name:</label>
+        <input type="text" id="shopName" placeholder="Enter shop name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="ownerName">Owner Name:</label>
+        <input type="text" id="ownerName" placeholder="Enter owner's name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="shopCategory">Category:</label>
+        <input type="text" id="shopCategory" placeholder="Enter shop category" required>
+      </div>
+
+      <div class="form-group">
+        <label for="shopFloor">Floor:</label>
+        <input type="number" id="shopFloor" placeholder="Enter floor number" min="0" required>
+      </div>
+
+      <button type="submit">Add Shop</button>
+    </form>
+  </div>
+
+  <script type="module" src="scripts/addshop.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Shops Container */
+#shopsContainer {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 700px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual Shop Item */
+.shop-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fafafa;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.shop-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Modify Button */
+button.modify-btn {
+    background-color: #ffc107;
+}
+
+button.modify-btn:hover {
+    background-color: #e0a800;
+}
+
+/* Delete Button */
+button.delete-btn {
+    background-color: #dc3545;
+}
+
+button.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Edit Form Container */
+#editFormContainer {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 450px;
+    padding: 25px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#editFormContainer h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #444;
+}
+
+/* Input Fields in the Form */
+#editShopForm input[type="text"],
+#editShopForm input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#editShopForm input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Confirm Action Button */
+#editShopForm button#confirmActionBtn {
+    width: 100%;
+    background-color: #28a745;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#editShopForm button#confirmActionBtn:hover {
+    background-color: #218838;
+}
+
+/* Cancel Button */
+#cancelActionBtn {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #6c757d;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#cancelActionBtn:hover {
+    background-color: #5a6268;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
