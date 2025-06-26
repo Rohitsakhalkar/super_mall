@@ -2,8 +2,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebas
 
 import { getDatabase,ref,push,onValue,remove,set } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-database.js";
 
-const appSetting = { 
-    databaseURL: "https://supermall-72728-default-rtdb.firebaseio.com/",
+const appSetting = {
+  databaseURL: "https://super-mall-f6a40-default-rtdb.firebaseio.com",
 };
 
 const app = initializeApp(appSetting);
