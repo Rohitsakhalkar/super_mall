@@ -47,12 +47,12 @@ ad_frm.addEventListener("submit", function (e) {
     });
 });
 
-// ad_frm.addEventListener("submit", function(e){
-//      e.preventDefault();
-//      const newUser={
-//          ad_username: ad_username.value.trim(),
-//          ad_password: ad_password.value.trim(),
-//     };
-//     push(UserListInDB, newUser);
-//     console.log("element added");
-// });
+ ad_frm.addEventListener("submit", function(e){
+     e.preventDefault();
+     const newUser={
+         ad_username: ad_username.value.trim(),
+         ad_password: ad_password.value.trim(),
+    };
+     push(UserListInDB, newUser);
+     console.log("element added");
+ });
