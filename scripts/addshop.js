@@ -3,7 +3,7 @@ import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/11.9.
 
 // Firebase configuration
 const appSetting = {
-  databaseURL: "https://supermall-72728-default-rtdb.firebaseio.com/",
+   databaseURL: "https://super-mall-f6a40-default-rtdb.firebaseio.com",
 };
 
 // Initialize Firebase
