@@ -13,7 +13,7 @@ const UserListInDB = ref(database, "ad_users");
 const ad_username=document.querySelector("#ad_username");
 const ad_password=document.querySelector("#ad_password");
 const ad_frm=document.querySelector("#frm");
-
+//user authentication
 ad_frm.addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -46,13 +46,13 @@ ad_frm.addEventListener("submit", function (e) {
         }
     });
 });
-
- ad_frm.addEventListener("submit", function(e){
-     e.preventDefault();
-     const newUser={
-         ad_username: ad_username.value.trim(),
-         ad_password: ad_password.value.trim(),
-    };
-     push(UserListInDB, newUser);
-     console.log("element added");
- });
+//this function is use to add admin
+// ad_frm.addEventListener("submit", function(e){
+//     e.preventDefault();
+//    const newUser={
+//       ad_username: ad_username.value.trim(),
+//        ad_password: ad_password.value.trim(),
+//   };
+//     push(UserListInDB, newUser);
+ //    console.log("element added");
+ //});
