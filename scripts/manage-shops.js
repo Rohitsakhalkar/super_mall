@@ -3,7 +3,7 @@ import { getDatabase, ref, onValue, remove, update } from "https://www.gstatic.c
 
 // Firebase Configuration
 const appSetting = { 
-    databaseURL: "https://supermall-72728-default-rtdb.firebaseio.com/",
+     databaseURL: "https://super-mall-f6a40-default-rtdb.firebaseio.com",
 };
 
 const app = initializeApp(appSetting);
