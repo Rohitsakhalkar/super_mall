@@ -20,3 +20,10 @@ It’s built using **HTML**, **CSS**, and **JavaScript** to showcase a modern, r
 ## 🌐 Live Demo
 
 Check it out here 👉 [https://super-mall-gules.vercel.app/]
+
+## 👨‍💻 Author
+### Hey there! I’m Rohit Sakhalkar, a frontend developer with a passion for real-world UI development and solving problems with clean code.
+
+-🔗 GitHub: @Rohitsakhalkar
+
+-📬 Email: rohitsakhalkar3@gmail.com
